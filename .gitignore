@@ -1,0 +1,13 @@
+.vscode
+/.fleet
+/.idea
+/.vscode
+*no*commit*
+*No*Commit*
+*NO*COMMIT*
+*.bkp.*
+*.bkp
+*.log
+*.out
+
+desktop.ini

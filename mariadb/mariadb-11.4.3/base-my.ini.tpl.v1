@@ -1,0 +1,33 @@
+# MariaDB Server Configuration File
+
+[client]
+; plugin-dir=C:\apps\mariadb\mariadb-11.4.3/lib/plugin
+port=3307
+socket=mysql.sock
+
+[mysqld]
+; datadir=C:/apps/mariadb/mariadb-11.4.3/data
+# Configurações de rede
+bind-address=0.0.0.0
+port=3307
+
+# Diretórios de dados
+; datadir=C:/apps/mariadb/mariadb-11.4.3/data
+; socket=mysql.sock
+
+# Configurações de log
+; log-error=C:/apps/mariadb/mariadb-11.4.3/data/mariadb-error.log
+; pid-file=C:/apps/mariadb/mariadb-11.4.3/data/mariadb.pid
+
+# Configurações de desempenho
+max_connections=100
+key_buffer_size=16M
+table_open_cache=64
+sort_buffer_size=256K
+read_buffer_size=256K
+read_rnd_buffer_size=256K
+myisam_sort_buffer_size=8M
+
+# Configurações de segurança
+; skip-name-resolve
+; skip-grant-tables

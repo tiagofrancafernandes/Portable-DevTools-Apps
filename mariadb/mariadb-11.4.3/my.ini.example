@@ -1,0 +1,42 @@
+# MariaDB Server Configuration File
+
+[client]
+socket=mysql.sock
+host=127.0.0.1
+port=3307
+plugin-dir=../lib/plugin
+; plugin-dir=C:\apps\mariadb\mariadb-11.4.3/lib/plugin
+skip-ssl-verify-server-cert=true
+port=3307
+socket=mysql.sock
+
+[mysqld]
+datadir=./
+# Configurações de rede
+bind-address=0.0.0.0
+port=3307
+
+# Diretórios de dados
+datadir=../data
+socket=mysql.sock
+
+# Configurações de log
+log-error=./mariadb-error.log
+pid-file=./mariadb.pid
+
+# Configurações de desempenho
+max_connections=100
+key_buffer_size=16M
+table_open_cache=64
+sort_buffer_size=256K
+read_buffer_size=256K
+read_rnd_buffer_size=256K
+myisam_sort_buffer_size=8M
+datadir=../data
+named-pipe=ON
+socket=mysql.sock
+port=3307
+
+# Configurações de segurança
+; skip-name-resolve
+; skip-grant-tables

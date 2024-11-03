@@ -8,4 +8,6 @@ WS_PORT=${WS_PORT:-8000}
 
 start "http://localhost:${WS_PORT}"
 
-/c/apps/php/php-8.3/php.exe -S 0.0.0.0:${WS_PORT} -t ${FULL_SITE_PATH}
+nohup /c/apps/bin/mysqld.sh &
+
+/c/apps/bin/php8.3.sh -S 0.0.0.0:${WS_PORT} -t ${FULL_SITE_PATH}
